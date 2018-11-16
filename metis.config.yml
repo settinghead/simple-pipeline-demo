@@ -1,5 +1,5 @@
 project_token: <insert project token>
-name: data_pipeline
+name: data-pipeline-demo
 jobs:
     - job_id: < create and insert job id for data_ingest.py here>
       name: data_ingest
