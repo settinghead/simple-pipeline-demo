@@ -61,3 +61,9 @@ git commit -m "Create jobs in config and Add modules to requirements file"
 Skafos can follow updates you make to your application and deploy whenever you've made updates to your application. To do this, you must [**add the Skafos app to your repo**](https://github.com/apps/skafos).
 
 ![Adding Skafos to your GitHub repo](https://files.readme.io/86869d1-Screenshot_from_2018-11-07_16-29-58.png)
+
+## Step 5 - Push to Skafos
+Simply git push! To see your project running on Skafos, check out your dashboard
+```
+git push skafos
+```
