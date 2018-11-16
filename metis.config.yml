@@ -1,14 +1,14 @@
-project_token: b19b3855e03048c8aff563e4
+project_token: <insert project token>
 name: data_pipeline
 jobs:
-    - job_id: 0560f7f5-6724-4bc2-9fb8-fe8ee0c1304e
+    - job_id: < create and insert job id for data_ingest.py here>
       name: data_ingest
       language: python
       entrypoint: data_ingest.py
 
 
-    - job_id: 8acced1c-f307-4500-bad0-c7efbfd40d75
+    - job_id: < create and insert job id for generate_report.py here>
       name: generate_report
       language: python
       entrypoint: generate_report.py
-      dependencies: [0560f7f5-6724-4bc2-9fb8-fe8ee0c1304e]
+      dependencies: [ <insert job id for data_ingest.py here > ]
