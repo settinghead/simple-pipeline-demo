@@ -63,7 +63,7 @@ Skafos can follow updates you make to your application and deploy whenever you'v
 ![Adding Skafos to your GitHub repo](https://files.readme.io/86869d1-Screenshot_from_2018-11-07_16-29-58.png)
 
 ## Step 5 - Push to Skafos
-Simply git push! To see your project running on Skafos, check out your dashboard
+Simply git push! To see your project running on Skafos, check out your [dashboard](https://dashboard.metismachine.io/)
 ```
 git push skafos
 ```
