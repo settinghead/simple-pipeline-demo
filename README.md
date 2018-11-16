@@ -1,4 +1,4 @@
-# Data Pipeline Example
+# Simpe Pipeline Example
 This is a repository that serves as an example for a simple job you might have to run on a daily/hourly/weekly basis. It generates a mock data set, supposed to be representing some email events that are coming in and some user types associated with each of those emails.
 
 We run a simple job to aggregate this data and from there it can either be written to file, stored in a database, send a message to a Slack channel, etc.
@@ -7,14 +7,14 @@ We run a simple job to aggregate this data and from there it can either be writt
 - [**Sign Up**](https://dashboard.metismachine.io/sign-up) for a Skafos Account
 - [**Install Skafos**](https://docs.metismachine.io/docs/installation)
 - Authenticate using `skafos auth`
-- A repository on Github with code that you'd like to run on Skafos. If you don't have a repository and want to use a pre-baked example, fork [**this repository**](https://github.com/griffinwalkerMM/data_pipeline).
+- A repository on Github with code that you'd like to run on Skafos. If you don't have a repository and want to use a pre-baked example, fork [**this repository**](https://github.com/skafos/simple-pipeline-demo/).
 
 The remaining steps in this tutorial use the example repository. 
 
 ## Step 1 - Clone and Initialize your Repository
 ```shell
-git clone https://github.com/username/data-pipeline-demo.git # clone your repo
-cd data-pipeline-demo # go into your project directory
+git clone https://github.com/username/simple-pipeline-demo.git # clone your repo
+cd simple-pipeline-demo # go into your project directory
 skafos init # initialize your new skafos project
 ```
 
