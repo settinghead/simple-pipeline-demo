@@ -13,7 +13,7 @@ The remaining steps in this tutorial use the example repository.
 
 ## Step 1 - Clone and Initialize your Repository
 ```shell
-git clone https://github.com/username/data_pipeline.git # clone your repo
+git clone https://github.com/username/data-pipeline-demo.git # clone your repo
 cd data_pipeline # go into your project directory
 skafos init # initialize your new skafos project
 ```
