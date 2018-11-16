@@ -26,7 +26,7 @@ This can be done by:
 - Creating job ids using `skafos create job` (see below).
 - Adding the jobs to your **metis.config.yml** file.
 
-```
+```shell
 # Get your project-token
 cat metis.config.yml # take a look at your current config file
 
@@ -43,7 +43,7 @@ In order for Skafos to run properly, you must tell it what modules your jobs req
 
 For example, our workflow requires pandas, numpy, etc. so we must add those to our **requirements.txt**.
 
-```
+```shell
 # either use your favorite text editor or
 # use the below commands
 touch requirements.txt;
@@ -64,6 +64,6 @@ Skafos can follow updates you make to your application and deploy whenever you'v
 
 ## Step 5 - Push to Skafos
 Simply git push! To see your project running on Skafos, check out your [dashboard](https://dashboard.metismachine.io/)
-```
+```shell
 git push skafos
 ```
