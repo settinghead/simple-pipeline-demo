@@ -15,7 +15,7 @@ df = generate_fake_data(rows = 10000)
 
 # take a look at the data
 ska.log("Take a look at the head of the data:", labels = ['data_pipeline'])
-print(tabulate(df.head(), tablefmt="grid"))
+print(df.head())
 
 # aggregate the data by user type and event type
 ska.log("Running our aggregation by user and event type")
@@ -34,4 +34,4 @@ result_df['bounce_back_rate'] = result_df['bounce_back'] /result_df['total_sent'
 result_df = result_df[['user_type', 'total_sent', 'open_rate', 'bounce_back_rate']]
 
 ska.log("Aggregation job finished, take a look at the results below", labels = ['data_pipeline'])
-print(tabulate(result_df.head(), tablefmt="grid"))
+print(result_df.head())
