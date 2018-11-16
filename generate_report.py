@@ -15,7 +15,7 @@ df = generate_fake_data(rows = 10000)
 
 # take a look at the data
 ska.log("Take a look at the head of the data:", labels = ['data_pipeline'])
-ska.log(df.head(3))
+print(df.head(3))
 
 # aggregate the data by user type and event type
 ska.log("Running our aggregation by user and event type")
