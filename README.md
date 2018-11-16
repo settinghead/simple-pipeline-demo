@@ -36,4 +36,28 @@ skafos create job generate_report.py --project <insert-your-project-token-here>
 
 # Add these jobs to your config file by editing metis.config.yml
 # vi metis.config.yml or use whatever your favorite text editor is 
+
 ```
+## Step 3 - Add your modules
+In order for Skafos to run properly, you must tell it what modules your jobs require. This can be specified in the requirements.txt file. 
+
+For example, our workflow requires pandas, numpy, etc. so we must add those to our **requirements.txt**.
+
+```
+# either use your favorite text editor or
+# use the below commands
+touch requirements.txt;
+echo "pandas==0.23.4" >> requirements.txt;
+echo "numpy==1.15.1" >> requirements.txt;
+echo "tabulate==0.8.2" >> requirements.txt;
+echo "datetime==4.3" >> requirements.txt;
+
+# commit our changes to our repo
+git add .
+git commit -m "Create jobs in config and Add modules to requirements file"
+```
+
+## Step 4 - Add Skafos to your GitHub repo
+Skafos can follow updates you make to your application and deploy whenever you've made updates to your application. To do this, you must [**add the Skafos app to your repo**](https://github.com/apps/skafos).
+
+[](https://files.readme.io/86869d1-Screenshot_from_2018-11-07_16-29-58.png)
