@@ -2,3 +2,4 @@ pandas==0.23.4
 numpy==1.15.1
 tabulate==0.8.2
 datetime==4.3
+skafossdk>=1.1.9
