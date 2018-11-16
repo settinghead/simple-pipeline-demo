@@ -34,4 +34,4 @@ result_df['bounce_back_rate'] = result_df['bounce_back'] /result_df['total_sent'
 result_df = result_df[['user_type', 'total_sent', 'open_rate', 'bounce_back_rate']]
 
 ska.log("Aggregation job finished, take a look at the results below", labels = ['data_pipeline'])
-ska.log(result_df['head'], labels = ['data_pipeline'])
+print(result_df.head())
