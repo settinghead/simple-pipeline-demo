@@ -1,14 +1,14 @@
-project_token: <insert project token>
+project_token: 820c9537a6548791bcaecdfb
 name: simple-pipeline-demo
 jobs:
-    - job_id: < create and insert job id for data_ingest.py here>
-      name: data_ingest
-      language: python
-      entrypoint: data_ingest.py
-
-
-    - job_id: < create and insert job id for generate_report.py here>
-      name: generate_report
-      language: python
-      entrypoint: generate_report.py
-      dependencies: [ <insert job id for data_ingest.py here > ]
+  - job_id: 89b3ee64-f1f0-4aad-a73a-661c611a0bc6
+    language: python
+    name: Main
+    entrypoint: "main.py"
+  - job_id: afe8faa7-bfe6-4189-a456-48f3e99e83da
+    name: data_ingest.py
+    entrypoint: data_ingest.py
+  - job_id: 7dc527c3-c1d3-4039-b5dc-870cb95e6094
+    name: generate_report.py
+    entrypoint: generate_report.py
+    dependencies: ["afe8faa7-bfe6-4189-a456-48f3e99e83da"]
